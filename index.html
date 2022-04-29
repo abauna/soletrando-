@@ -1,5 +1,7 @@
     <head>
         <title>Javascrip</title>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
         <script language="javascript" >
 function sortear4() {
     var rand = Math.floor(Math.random() * 244);
@@ -2630,7 +2632,7 @@ function sortear2() {
     document.getElementById("frase").innerHTML = frase[rand];
 }
 function sortear() {
-    var rand = Math.floor(Math.random() * 168);
+    var rand = Math.floor(Math.random() * 167);
     var Palavras = new Array(
         "	actor	",
         "	airplane	",
@@ -3172,12 +3174,12 @@ function sortear() {
         "	The car slowly climbed the hill.	",
         "	He made a strong pot of coffee.	",
         "	He gave the petit taxi driver a 10 dirham coin	",
-        "		",
+        "	teste	",
         "	She’s my cousin.	",
         "	There was music and dancing till two in the morning.	",
         "	He died a slow and painful death.	",
         "	He went to the dentist every year to have a checkup and have his teeth cleaned.	",
-        "		",
+        "	teste	",
         "	It was a despicable effort to blackmail voters.	",
         "	I never eat a big dinner.	",
         "	Her mother placed the fruit in a large shallow dish.	",
@@ -3313,28 +3315,72 @@ function sortear() {
 
         </script>
     </head>
-<body >
-  <p>Palavra:</p>
-<p id="Palavras">Palavras
+<body>
+<style>
+body {
+background-color: #020D1F;
+}
+</style>
+
+<div class="shadow p-1 mb-1 bg-white rounded">
+
+<div style=" background-color: rgb(4,26,55);"class="card w-100 p-3 h-auto d-inline-block">
+<img class="rounded float-right" width="150" height="170" src="Spelling_Bee.png">
+  <div class="card-body">
+ <p class="text-white text-monospace">Palavra:</p>
+<h1>
+<p id="Palavras" class="text-white text-monospace" class="text-uppercase">Palavras
 </p>
-  <p>Nivel:</p>
-<p id="nível">nível
+</h1>
+
+<blockquote class="blockquote">
+ 
+  <footer class="blockquote-footer">classe: <cite id="classe" title="Título da fonte">classe</cite></footer>
+</blockquote>
+
+</div>
+</div>
+</div>
+
+
+
+<div class="shadow p-1 mb-1 bg-white rounded">
+<div style=" background-color: rgb(4,26,55);"class="card w-100 p-3 h-auto d-inline-block">
+  <div class="card-body">
+  <p  class="text-white text-monospace">Conceito:</p>
+<p class="text-white text-monospace" id="conceito">conceito
 </p>
-  <p>Classe:</p>
-<p id="classe">classe
+</div>
+</div>
+</div>
+
+
+
+<div class="shadow p-1 mb-1 bg-white rounded">
+<div style=" background-color: rgb(4,26,55);"class="card w-100 p-3 h-auto d-inline-block">
+  <div class="card-body">
+  <p class="text-white text-monospace" >Frase:</p>
+<p class="text-white text-monospace" id="frase">frase
 </p>
-  <p>Conceito:</p>
-<p id="conceito">conceito
+
+<p class="text-white text-monospace" >Nível:</p>
+<p class="text-white text-monospace" id="nível">nível
 </p>
-  <p>Frase:</p>
-<p id="frase">frase
-</p>
-  <button onclick="sortear()">n1</button>
+
+
+
+</div>
+</div>
+</div>
+
+
+
+<button button type="button" class="btn btn-primary  p-3 h-auto d-inline-block " onclick="sortear()">nivel 1</button>
   
-<button onclick="sortear2()">n2</button>
+<button button type="button" class="btn btn-success  p-3 h-auto d-inline-block" onclick="sortear2()">nivel 2</button>
   
-<button onclick="sortear3()">n3</button>
+<button button type="button" class="btn btn-warning  p-3 h-auto d-inline-block" onclick="sortear3()">nivel 3</button>
   
-<button onclick="sortear4()">n4</button>
+<button button type="button" class="btn btn-danger  p-3 h-auto d-inline-block" onclick="sortear4()">nivel 4</button>
  
   </body>
